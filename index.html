@@ -12,6 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     </head>
     <body>
@@ -28,11 +30,11 @@
               <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" alt="" width="80">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menus" aria-controls="menus" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll nav-top" style="--bs-scroll-height: 100px;">
+              <div class="collapse navbar-collapse" id="menus">
+                <ul class="navbar-nav mx-auto my-2 my-lg-0 nav-top">
                   <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                   </li>
@@ -46,15 +48,15 @@
                     <a class="nav-link" href="#tokenomic">Tokenomics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#whitepaper">Whitepaper</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="#faq">Faq</a>
                   </li>
-                </ul>
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll nav-top" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="btn-grad-1 btn rounded-pill" href="">
+                    <a class="nav-link" target="_blank" href="assets/pdf/whitepaper_flashherobsc.pdf">Whitepaper</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 d-none d-sm-block">
+                  <li class="nav-item">
+                    <a class="btn-grad-1 btn rounded-pill" href="https://t.me/FlashHeroToken" target="_blank">
                       Join community
                     </a>
                   </li>
@@ -64,13 +66,26 @@
           </nav>
         </header>
         <!-- End Header -->
+        <div class="fixed-bottom m-3" style="left:auto;right:0">
+          <div class="d-sm-none d-block">
+            <a href="https://t.me/FlashHeroToken" target="_blank">
+              <i class="bi bi-telegram text-white h1"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
         <div class="position-relative">
-        <section class="space-m min-vh-80 text-white d-flex align-items-center">
+        <section class="space-m min-vh-80 text-white d-flex align-items-center" style="background:url('assets/img/5.png');background-size: cover;">
           <div class="container">
             <div class="row">
               <div class="col-md-6 offset-md-3 text-center">
                 <p class="lead mb-0">Awesome token</p>
-                <!-- <h1 class="title-3 display-2 my-0">flash hero bsc</h1> -->
+                <!-- <h1 class="title-3 display-2 my-0">Flash Hero bsc</h1> -->
 
                 <div class="stack title-hero my-2" style="--stacks: 3;">
                   <span style="--index: 0;">Flash Hero Bsc</span>
@@ -78,14 +93,15 @@
                   <span style="--index: 2;">Flash Hero Bsc</span>
                 </div>
               <div class="">
-                <a href="" class="btn btn-grad-1">Buy Token</a>
-                <a href="" class="btn btn-grad-2">Whitepaper</a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x84da2d4024ac44307ea67fe10077dbbdc10c5654&inputCurrency=BNB" target="_blank" class="btn btn-grad-1">Buy Token</a>
+                <a href="assets/pdf/whitepaper_flashherobsc.pdf" target="_blank" class="btn grad-3 text-white">Whitepaper</a>
               </div>
 
               </div>
             </div>
           </div>
         </section>
+        
       </div>
       <div class="position-relative">
       <section class="space-xl text-white bg-trans" id="about">
@@ -94,19 +110,19 @@
           <div class="row">
           <div class="col-md-10 offset-md-1">
           <div class="row">
-            <div class="col-md align-self-center">
-              <p class="style-tire border-white">FLASH HERO</p>
-          <h2 class="title-1"><span class="text-warning">Flash Hero</span>
-            is the best for your crypto</h2>
+            <div class="col-md-6 offset-md-3 align-self-center">
+              <p class="style-tire border-white">Flash Hero</p>
+          <h4 class="title-1"><span class="text-hero-2">Flash Hero</span>
+            is the best for your crypto</h4>
             <p class="mb-4">The longer you hold, The more you earn -Its really is that simple 16% MetaHero Token rewards</p>
             <p class="style-tire border-white">METAHERO $HERO</p>
             <p>The HERO token will be the exclusive token be used within the metahero ecosystem, That includes transacting on the 3D NFT Marketplace, Paying For scans, paying royalties, as well as paying for Metahero 3D .</p>
             </div>
-            <div class="col-md text-center">
+            <!-- <div class="col-md text-center">
               <div class="">
                 <img src="assets/img/logo.png" alt="" width="80%" class="">
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         </div>
@@ -117,16 +133,13 @@
     <div class="position-relative">
       <section class="space-m text-white" id="roadmap">
         <div class="container">
-          <h2 class="title-1 text-center mb-4">Roadmaps</h2>
+          <h4 class="title-1 text-center mb-4">Roadmaps</h4>
         <div class="row">
-          <div class="col-md-5">
-            <img src="https://dummyimage.com/600x800" alt="" width="100%">
-          </div>
         <div class="col-md-7">
           <ol class="timeline timeline-content-right timeline-point-md" id="demo-timeline-size">
             <li class="timeline-block">
               <div class="timeline-point">
-                <span class="bg-hero p-2 h5"><span class="text-warning">Q1</span></span>
+                <span class="bg-hero p-2 h5"><span class="text-hero-2">Q1</span></span>
               </div>
               <div class="timeline-content">
                 <div class="">
@@ -142,7 +155,7 @@
             </li>
             <li class="timeline-block">
               <div class="timeline-point">
-                <span class="bg-hero p-2 h5"><span class="text-warning">Q2</span></span>
+                <span class="bg-hero p-2 h5"><span class="text-hero-2">Q2</span></span>
               </div>
               <div class="timeline-content">
                 <div class="">
@@ -156,7 +169,7 @@
             </li>
             <li class="timeline-block">
               <div class="timeline-point">
-                <span class="bg-hero p-2 h5"><span class="text-warning">Q3</span></span>
+                <span class="bg-hero p-2 h5"><span class="text-hero-2">Q3</span></span>
               </div>
               <div class="timeline-content">
                 <div class="">
@@ -172,13 +185,266 @@
           </ol>
           
         </div>
+        <div class="col-md-5" style="position: absolute;right: 0;width: 400px;padding: 0;left: auto;">
+          <!-- <img src="https://dummyimage.com/600x800" alt="" width="100%"> -->
+          <img src="assets/img/6.png" alt="" width="100%">
+        </div>
         </div>
         </div>
       </section>
     </div>
+    <div class="position-relative">
+      <section class="space-m text-white bg-trans" id="tokenomic">
+        <div class="container">
+          <h4 class="title-1 text-center mb-4">Tokenomics</h4>
+          <div class="row">
+            <div class="col-md-6 mb-sm-0 mb-4">
+              <!-- <div style="padding:80px"> -->
+                <div class="position-relative">
+              <div class="p-3">
+                  <canvas id="cart" class="" width="320" height="320" style="display: block; width: 320px; height: 320px;"></canvas>
+                </div>
+                <div class="to-center d-flex align-items-center text-center">
+                  <div class="w-100">
+                    <img src="assets/img/logo.png" alt="" width="90">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <!-- <p class="lead">15% buy and sell</p> -->
+              <p class="style-tire border-white mb-4">Supply Allocation</p>
+              <div class="d-flex mb-3">
+                <div class="progress me-4" style="width:50%">
+                  <div class="progress-bar grad-3" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="align-self-center">Pancake 76%</div>
+              </div>
+              <div class="d-flex mb-3">
+                <div class="progress me-4" style="width:40%">
+                  <div class="progress-bar grad-3" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="align-self-center">Burn token 20%</div>
+              </div>
+              <div class="d-flex mb-3">
+                <div class="progress me-4" style="width:10%">
+                  <div class="progress-bar grad-3" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="align-self-center">4% Marketing wallet</div>
+              </div>
+              <p class="style-tire border-white mb-4">Tax and sell</p>
+              <div class="d-flex mb-3">
+                <div class="progress me-4" style="width:20%">
+                  <div class="progress-bar grad-3" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="align-self-center">8% Reward hero</div>
+              </div>
+              <div class="d-flex mb-3">
+                <div class="progress me-4" style="width:10%">
+                  <div class="progress-bar grad-3" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="align-self-center">5% Marketing</div>
+              </div>
+              <div class="d-flex mb-3">
+                <div class="progress me-4" style="width:5%">
+                  <div class="progress-bar grad-3" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="align-self-center">2% Dev wallet</div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+    </div>
+    <div class="position-relative">
+      <section class="space-m" id="faq">
+        <div class="container">
+          <h4 class="title-1 text-center text-white mb-5">Frequency Asked Questions</h4>
+
+          <div class="row">
+          <div class="col-md-8 offset-md-2">
+          <div class="accordion" id="accordionFaq">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="one">
+                <button class="accordion-button collapsed text-hero" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is Flash Hero?
+                </button>
+              </h4>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="one" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  Flash Hero is token with Hero System reward
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="two">
+                <button class="accordion-button collapsed text-hero" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Why Hero system?
+                </button>
+              </h4>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  Because we see the potential of the Hero and it deserves to be owned by all NFT lovers. We built Flash Hero to introduce the Hero-system to the world.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="three">
+                <button class="accordion-button collapsed text-hero" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Is Flash Hero safe?
+                </button>
+              </h4>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="three" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  We locked FlashHero liquidity in DXsale so you don't have to worry about Rugpull or something. You can also check the Flash Hero Contract before buying. please don't buy before doing some research.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="four">
+                <button class="accordion-button collapsed text-hero" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                  Is Flash Hero part of the Hero system?
+                </button>
+              </h4>
+              <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="four" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  Flash Hero is not part of the Hero-system. at least for now, we are trying to build Flash Hero so we can cooperate with the Hero-system in the future. This is purely a community-made token and built to support the Hero-system.
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <div class="position-relative">
+      <section class="space-m" style="background:url('assets/img/7.png');">
+        <div class="container">
+          <h4 class="title-1 text-center text-white mb-5">Partners Flash Hero</h4>
+          <div class="row">
+          <div class="col-md-8 offset-md-2">
+          <div class="card">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="">
+                <div class=" py-4">
+                  <img src="assets/img/1.png" alt="" width="100%" class="gray-part">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 border-start">
+              <div class="">
+                <div class=" py-4">
+                  <img src="assets/img/2.png" alt="" width="100%" class="gray-part">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 border-start">
+              <div class="">
+                <div class=" py-4">
+                  <img src="assets/img/3.png" alt="" width="100%" class="gray-part">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 border-start">
+              <div class="">
+                <div class=" py-4">
+                  <img src="assets/img/4.png" alt="" width="100%" class="gray-part">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </section>
+    </div>
+    <div class="position-relative">
+    <footer class="space-m bg-trans text-white title-1">
+        <div class="container">
+          <div class="d-flex justify-content-between flex-sm-row flex-column flex-column-reverse flex-lg-row">
+            <div class="small text-center-start text-center">
+              <div class="d-sm-none d-block mt-3">
+                Copyright 2021 Flash Hero BSC
+              </div>
+              <div class="d-none d-sm-block">
+                <img src="assets/img/logo.png" alt="" width="70" class="d-inline-block align-text-center me-3">Copyright 2021 Flash Hero BSC
+              </div>
+            </div>
+            <div class="">
+              <ul class="nav nav-social justify-content-center justify-content-end-sm">
+                <li class="nav-item align-self-center me-2 small d-none d-sm-block">
+                    Join Us
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://t.me/FlashHeroToken" target="_blank">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script> -->
         <script src="assets/js/main.js"></script>
+        <script>
+          const ctx = document.getElementById('cart').getContext('2d');
+          const cart = new Chart(ctx, {
+            type: 'doughnut',
+              data: {
+                  labels: ['Pancake','Burn Token','Reward Hero', 'Marketing', 'Wallet Marketing', 'Dev Wallet'],
+                  datasets: [{
+                      // label: '# of Votes',
+                      data: [76, 20, 8, 5, 4, 2],
+                      backgroundColor: [
+                          '#ea485c',
+                          '#ed8a4c',
+                          '#ed8a4c',
+                          '#ed8a4c',
+                          '#ed8a4c',
+                          '#ed8a4c'
+                      ],
+                      borderColor: [
+                          '#122624',
+                          '#122624',
+                          '#122624',
+                          '#122624',
+                          '#122624',
+                          '#122624'
+                      ],
+                      borderWidth: 4
+                  }]
+              },
+              options: {
+                responsive: true,
+    maintainAspectRatio: false,
+                plugins: {
+      legend: {
+        display: false,
+      }
+    }
+              }
+          });
+          </script>
+          
     </body>
 </html>
